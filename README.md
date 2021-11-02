@@ -6,3 +6,6 @@
   Creación del archivo server:
     touch server.js
 
+  Se instala paquete express:
+   npm install express 
+
