@@ -10,7 +10,7 @@ app.use(express.json());
 
 //Conexión Base de datos
 
-mongoose.connect("mongodb+srv://KarolPino:Sophia0518@clusterretonodejsmongod.fyc4h.mongodb.net/test")
+mongoose.connect("mongodb+srv://KarolPino:Sophia0518@clusterretonodejsmongod.fyc4h.mongodb.net/RetoNodeJsMongodb?retryWrites=true&w=majority")
 
 //Operaciones CRUD
 
