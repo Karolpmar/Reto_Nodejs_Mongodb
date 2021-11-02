@@ -9,3 +9,7 @@
   Se instala paquete express:
    npm install express 
 
+  Se instala paquete mongoose:
+    npm i mongoose
+
+  
