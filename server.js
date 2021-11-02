@@ -28,7 +28,7 @@ router.post('/Usuario', (req, res) =>{
     let nuevoUsuario = new UsuarioSchema({
         tipoDocumento: req.body.tipoDocumento,
         documentoId: req.body.documentoId,
-        nombresUsuario: req.body,nombres,
+        nombresUsuario: req.body.nombres,
         apellidosUsuario: req.body.apellidos,
         direccionUsuario: req.body.direccion,
         correoUsuario: req.body.correo,
