@@ -12,4 +12,8 @@
   Se instala paquete mongoose:
     npm i mongoose
 
-  
+  Se hacen operaciones CRUD:
+    app.use(router);
+    app.listen(3000, () => {
+      console.log("Servidor corriendo en el puerto 3000")
+    });

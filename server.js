@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const express = require('express');
+const UsuarioSchema = require("./Modelos/Usuario.js");
 
 const app = express();
 const router = express.Router();
