@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const UsuarioSchema = require("./Modelos/Usuario.js");
+const UpdateUsuario = require("./Modelos/Usuario.js/documentoId");
 
 const app = express();
 const router = express.Router();
@@ -47,10 +48,10 @@ router.post('/Usuario', (req, res) =>{
     })
 })
 
-//Consultar todo (método get)
+//Consultar
 
 router.get('/Usuario', (req, res) => {
-    UsuarioSchema.find(function(err, datos){
+    UsuarioSchema.findOne(function(err, datos){
         if(err){
             console.log("Error en la lectura de datos");        
         }else{
@@ -58,4 +59,20 @@ router.get('/Usuario', (req, res) => {
         }
     })
 })
+
+//Eliminar
+router.delete('/Usuario', (req, res) => {
+    UsuarioSchema.deleteOne(function(err, datos){
+        if(err){
+            console.log("Error en la lectura de datos");        
+        }else{
+            res.send("Usuario eliminado");
+        }
+    })
+})
+
+
+    
+
+
 
